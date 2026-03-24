@@ -1,0 +1,12 @@
+function y = f(x)
+    y = (4*cos(x)) ./ (x + exp(-0.75*x));
+end
+
+x = -2:0.01:16;
+y = f(x);
+
+plot(x, y)
+xlabel('x')
+ylabel('f(x)')
+title('Graph of f(x) = 4cos(x) / (x + exp(-0.75x))')
+grid on
