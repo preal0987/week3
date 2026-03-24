@@ -1,0 +1,16 @@
+v0 = 50;
+A = 50;
+g = 9.81;
+
+thit = 2*v0*sind(A)/g
+ymax = (v0*sind(A))^2/(2*g)
+
+t = 0:0.01:thit;
+x = v0*cosd(A)*t;
+y = v0*sind(A)*t - 0.5*g*t.^2;
+
+plot(x, y)
+xlabel('x')
+ylabel('y')
+title('Projectile Motion')
+grid on
